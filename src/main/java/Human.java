@@ -4,26 +4,25 @@ public class Human {
     // Придумать генераторы строк, например имени и названия профессии.
     // Вычислить у кого из сотрудников самая большая зарплата и выведи в консоль его имя и зарплату.
 
-
     String name;
     Profession profession;
 
-    public Human() {
-        this.name = Util.generateHumanName();
-        this.profession = new Profession();
+    public Human(String name, Profession profession) {
+        this.name = name;
+        this.profession = profession;
     }
 
-    public class Profession {
+    public static class Profession {
         String profession;
         int salary;
         int age;
         int experience;
 
-        public Profession() {
-            this.profession = Util.generateProfessionName();
-            this.salary = Util.generateSalary();
-            this.age = Util.generateAge();
-            this.experience = Util.generateExperience();
+        public Profession(String profession, int salary, int age, int experience) {
+            this.profession = profession;
+            this.salary = salary;
+            this.age = age;
+            this.experience = experience;
         }
 
         @Override
@@ -39,9 +38,9 @@ public class Human {
 
     @Override
     public String toString() {
-        return " {" +
-                "Имя сотрудника = '" + Util.generateHumanName() + '\'' +
-                profession +
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", profession=" + profession +
                 '}';
     }
 }

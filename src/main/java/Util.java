@@ -51,3 +51,8 @@ public class Util {
         return max;
     }
 }
+
+  /*   this.profession = Util.generateProfessionName();
+             this.salary = Util.generateSalary();
+             this.age = Util.generateAge();
+             this.experience = Util.generateExperience();*/
