@@ -5,11 +5,6 @@ public class Util {
         return new Random().nextInt(endBound);
     }
 
-    public static int calculateSalary() {
-        int result = Util.getRandomInteger(100);
-        return result * 100;
-    }
-
     public static String generateHumanName() {
         // Генерация случайного имени Человечища
         String[] humanNames = {"Геннадий", "Светозар", "Тихомир", "Семён", "Есений", "Добрыня", "Агустин", "Аврам",
@@ -49,6 +44,16 @@ public class Util {
             }
         }
         return max;
+    }
+
+    public static int arrayMinValues(int[] arr) {
+        int min = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
     }
 }
 

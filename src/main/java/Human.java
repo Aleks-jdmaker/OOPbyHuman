@@ -28,19 +28,19 @@ public class Human {
         @Override
         public String toString() {
             return " {" +
-                    "профессия = '" + profession + '\'' +
-                    ", зарплата = " + salary + " USA Rubles " +
-                    ", возвраст = " + age + " лет " +
-                    ", опыт = " + experience + " лет" +
+                    "профессия " + profession +
+                    ", зарплата = " + salary +
+                    ", возвраст - " + age + " лет " +
+                    ", опыт - " + experience + " лет" +
                     '}';
         }
     }
 
     @Override
     public String toString() {
-        return "Human{" +
-                "name='" + name + '\'' +
-                ", profession=" + profession +
+        return "Человек {" +
+                "" + name +
+                "," + profession +
                 '}';
     }
 }
